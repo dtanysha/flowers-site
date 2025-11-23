@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Регистрация и авторизация</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <div class="tabs">
+      <span id="show-register" class="tab-label tab-active">РЕГИСТРАЦИЯ</span>
+      <span id="show-login" class="tab-label">ВХОД</span>
+    </div>
+
+    <section id="register-section">
+      <form id="register-form">
+        <label>
+          Имя пользователя
+          <input type="text" id="reg-username">
+        </label>
+
+        <label>
+          Пароль
+          <input type="password" id="reg-password">
+        </label>
+
+        <label>
+          Повторите пароль
+          <input type="password" id="reg-password-confirm">
+        </label>
+
+        <button type="submit">Зарегистрироваться</button>
+        <div class="message" id="reg-message"></div>
+      </form>
+    </section>
+
+    <section id="login-section" style="display: none;">
+      <form id="login-form">
+        <label>
+          Имя пользователя
+          <input type="text" id="login-username">
+        </label>
+
+        <label>
+          Пароль
+          <input type="password" id="login-password">
+        </label>
+
+        <button type="submit">Войти</button>
+        <div class="message" id="login-message"></div>
+      </form>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
